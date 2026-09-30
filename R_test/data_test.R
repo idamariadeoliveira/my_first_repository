@@ -5,3 +5,6 @@ library(here)
 # Import the cleaned dataset using here()
 data_test <- import(here("data", "alzheimers_data_clean.csv"))
 
+nrow(data_test)
+
+# next step?
