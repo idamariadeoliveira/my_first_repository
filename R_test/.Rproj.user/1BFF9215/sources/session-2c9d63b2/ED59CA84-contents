@@ -1,0 +1,18 @@
+# Load the required packages
+library(tidyverse)
+library(rio)
+library(here)
+
+install.packages("pacman")
+library("pacman")
+pacman::p_load(
+  rio, here, tidyverse, knitr, kableExtra, skimr,
+  formatR, gridExtra, janitor
+)
+
+# Import the cleaned dataset using here()
+alzheimer_data_clean <- import(here("data", "alzheimer-clean.csv"))
+
+# Preview the first six rows
+head(alzheimer_data_clean)
+
